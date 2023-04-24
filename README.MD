@@ -23,8 +23,12 @@ npm install && npm start
 - auth.js
 - task.js
 
-#### User Model
+#### Error Handling
+- Builded Custom Error Handling Classes
+- Handled by error-handler Middleware
+- NotFound Middlware  handle Inappropriate route call
 
+#### User Model
 *Validator Function for User Registeration Validation
 
 #### Register User
