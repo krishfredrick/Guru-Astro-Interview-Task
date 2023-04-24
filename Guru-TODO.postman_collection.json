@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "a6e544b5-b2af-48d4-9a04-3a413c96d471",
+		"name": "Guru-TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25094427"
+	},
+	"item": [
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "create-todo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ1NGMxNjM4NzA5OGQyOTc3MDQ1MGQiLCJuYW1lIjoiU2FjaGluMTEiLCJpYXQiOjE2ODIyNjMwNjMsImV4cCI6MTY4MjUyMjI2M30.Yilnf3VActLxSZUOtEkg7YX7CLQYYZDy8c2GVVuUlsE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todo\":\"Need to error handling and corn now\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Todo}}/task",
+							"host": [
+								"{{Todo}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-all-todo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ1NGMxNjM4NzA5OGQyOTc3MDQ1MGQiLCJuYW1lIjoiU2FjaGluMTEiLCJpYXQiOjE2ODIyNjMwNjMsImV4cCI6MTY4MjUyMjI2M30.Yilnf3VActLxSZUOtEkg7YX7CLQYYZDy8c2GVVuUlsE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Todo}}/task",
+							"host": [
+								"{{Todo}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-todo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ1NGMxNjM4NzA5OGQyOTc3MDQ1MGQiLCJuYW1lIjoiU2FjaGluMTEiLCJpYXQiOjE2ODIyNjMwNjMsImV4cCI6MTY4MjUyMjI2M30.Yilnf3VActLxSZUOtEkg7YX7CLQYYZDy8c2GVVuUlsE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Todo}}/task/",
+							"host": [
+								"{{Todo}}"
+							],
+							"path": [
+								"task",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-todo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ1NGMxNjM4NzA5OGQyOTc3MDQ1MGQiLCJuYW1lIjoiU2FjaGluMTEiLCJpYXQiOjE2ODIyNjMwNjMsImV4cCI6MTY4MjUyMjI2M30.Yilnf3VActLxSZUOtEkg7YX7CLQYYZDy8c2GVVuUlsE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todo\":\"Need to more work on english haha before coding\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Todo}}/task",
+							"host": [
+								"{{Todo}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User-Register-and-login",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userDetail\":\"Master1Blaster\",\r\n    \"password\":\"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todo}}/auth/login",
+							"host": [
+								"{{todo}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sachin11\",\r\n    \"userName\":\"Master11Blaster\",\r\n    \"email\":\"test2@gmail.com\",\r\n    \"password\":\"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todo}}/auth/register",
+							"host": [
+								"{{todo}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
